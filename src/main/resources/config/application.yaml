@@ -21,10 +21,10 @@ spring:
     #password: root
     #driver-class-name: com.mysql.jdbc.Driver
   datasource:
-    url: jdbc:postgres:// + ${JDBC_DATABASE_URL} + /d74oqr268mfr3h?useSSL=true
+    driver-class-name:  org.postgresql.Driver
+    url: jdbc:postgresql:// + ${HEROKU_POSTGRESQL_MAROO_URL} + /d74oqr268mfr3h?useSSL=true
     username: ${JDBC_DATABASE_USERNAME}  
     password: ${JDBC_DATABASE_PASSWORD}
-    #driver-class-name: com.mysql.jdbc.Driver
   application:
     name: db-service
   jpa:
