@@ -21,17 +21,16 @@ spring:
     #password: root
     #driver-class-name: com.mysql.jdbc.Driver
   datasource:
-   # driver-class-name:  org.postgresql.Driver
     url: jdbc:postgresql:// + ${JDBC_DATABASE_URL} + /d74oqr268mfr3h?useSSL=true
     username: ${JDBC_DATABASE_USERNAME}  
     password: ${JDBC_DATABASE_PASSWORD}
+    #driver-class-name: com.mysql.jdbc.Driver
   application:
     name: db-service
   jpa:
     show-sql: false 
     hibernate:
       ddl-auto: update
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
        
             
       
