@@ -13,7 +13,7 @@ eureka:
     hostname: localhost
 spring:
   datasource:
-    url: ${JDBC_DATABASE_URL}
+    url: jdbc:postgres:// + ${JDBC_DATABASE_URL} + /d74oqr268mfr3h?useSSL=true
     username: ${JDBC_DATABASE_USERNAME}
     password: ${JDBC_DATABASE_PASSWORD}
     #driver-class-name: org.postgresql.Driver
